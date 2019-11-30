@@ -1,0 +1,5 @@
+selenium:
+  build: .
+  container_name: selenium
+  ports:
+    - "8888:80"
