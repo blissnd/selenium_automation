@@ -6,7 +6,7 @@ if [ "$1" == "" ]; then
 fi
 
 docker-compose up --force-recreate
-docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" selenium_selenium tail -f /dev/null &
+docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" seleniumautomation_selenium tail -f /dev/null &
 
 sleep 4
 
