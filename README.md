@@ -8,6 +8,7 @@ This tool can be used to carry out web browser automation based on a configurati
 
 An example configuration file has been included:
 
+```
 browser_steps:      
   - get_url: "https://www.w3schools.com/html/html_forms.asp"
   - sleep: 5
@@ -22,5 +23,6 @@ browser_steps:
   - sleep: 2
   - css_path: "#main > div:nth-child(5) > div > form > input[type=submit]:nth-child(8)"
   - click:  "click"
+```
 
 css_path can easily be obtained by inspecting any element on chrome developer tools and copying the selector.
